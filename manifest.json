@@ -1,0 +1,14 @@
+{
+    "name": "Live matches - Chrome Extension",
+    "version": "1.0.0",
+    "description": "My 1st extension",
+    "manifest_version": 3,
+    "author": "Lakshitha Samod",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Live Cricket Matches- Chrome Extension",
+        "default_icon": {
+            "48": "logo.png"
+        }
+    }
+}
