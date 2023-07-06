@@ -5,4 +5,106 @@ body {
     background-color: #f2f2f2;
     margin: 0;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 55%;
+    padding: 10px;
+}
+
+.bottom-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#page-heading {
+    font-size: 30px;
+    margin-top: 110px;
+    font-style: inherit;
+    text-decoration: underline;
+}
+
+#go-back {
+    margin-top: 110px;
+    display: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* CSS styles for the match list */
+.match-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.match-list li {
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+}
+
+.match-list li:hover {
+    background-color: #e6e6e6;
+}
+
+/* CSS styles for the match details */
+#match-details {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+}
+
+/* Style for the match details */
+.match-info p {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* Background colors for different details */
+.match-info p:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.match-info p:nth-child(even) {
+    background-color: #e0e0e0;
+}
+
+.light-blue {
+    background-color: lightblue;
+    font-family: sans-serif;
+}
+
+.light-green {
+    background-color: lightgreen;
 }
