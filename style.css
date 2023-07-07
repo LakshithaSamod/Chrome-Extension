@@ -1,6 +1,6 @@
 
 body {
-    min-width: 300px;
+    min-width: 500px;
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
     margin: 0;
@@ -9,26 +9,25 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 100vh;
-    margin: 0;
 }
 
 .container {
+    margin-top: 3px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
     border: 1px solid #ccc;
-    padding: 20px;
+    padding: 5px;
 }
 
 .top-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 55%;
-    padding: 10px;
+    width: 100%;
+    padding: 2px;
 }
 
 .bottom-section {
@@ -40,21 +39,20 @@ body {
 }
 
 #page-heading {
-    font-size: 30px;
-    margin-top: 110px;
+    font-size: 20px;
     font-style: inherit;
     text-decoration: underline;
 }
 
 #go-back {
-    margin-top: 110px;
     display: none;
     background-color: #007bff;
     color: #fff;
-    padding: 10px 20px;
+    padding: 3px 8px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 15px;
 }
 
 /* CSS styles for the match list */
@@ -78,8 +76,8 @@ body {
 /* CSS styles for the match details */
 #match-details {
     display: none;
-    margin-top: 20px;
-    padding: 10px;
+    margin-top: 5px;
+    padding: 5px;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
 }
