@@ -16,7 +16,7 @@ To install the Cricket Live Matches Chrome Extension, follow these steps:
 
 2. Open Google Chrome and go to `chrome://extensions` in the address bar.
 
-3. Enable the "Developer mode" toggle located at the top right corner of the page.
+3. Enable the "Developer mode" toggle located in the top right corner of the page.
 
 4. Click on the "Load unpacked" button and select the downloaded repository folder.
 
@@ -45,11 +45,3 @@ The Cricket Live Matches Chrome Extension is built using the following technolog
 ### Acknowledgments
 
 - This extension uses the cricapi to fetch live cricket match data. For more information, visit [cricapi](https://www.cricapi.com/).
-
-### License
-
-This project is licensed under the [MIT License](LICENSE).
-
-Feel free to contribute, report issues, or suggest enhancements!
-
-Happy cricketing!
