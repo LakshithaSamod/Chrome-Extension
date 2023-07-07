@@ -12,11 +12,11 @@ fetch(`https://api.cricapi.com/v1/currentMatches?apikey=${apiKey}&offset=0`)
         if(!matchesList)return [];
         console.log({matchesList});
 
-        //get all matchlist
+        //get all matchList
         //const relevantData = matchesList.map(match => `${match.name}, ${match.status}`);
 
         // Filter the matches according to a series
-        const relevantData = matchesList.filter(match => match.series_id == "81b588f0-afb5-49a6-99e5-15ea1ac127a9");
+        //const relevantData = matchesList.filter(match => match.series_id == "81b588f0-afb5-49a6-99e5-15ea1ac127a9");
 
         // Display each match in the list
         matchesList.forEach(match => {
@@ -42,23 +42,26 @@ function showMatchDetails(match) {
 
     // Show match details and populate with the clicked match
     matchDetails.style.display = 'block';
-    const scoreHtml = match.score.map(inning => `
-            <h3 class="light-blue">${inning.inning}</h3>
-            <p>Runs: ${inning.r}</p>
-            <p>Wickets: ${inning.w}</p>
-            <p>Overs: ${inning.o}</p>
-      `).join('');
+    const scoreHtml = match.score.map(({ inning, r, w, o }) => `
+        <h3 class="light-blue">${inning}</h3>
+        <p>Runs: ${r}</p>
+        <p>Wickets: ${w}</p>
+        <p>Overs: ${o}</p>
+    `).join('');
+
     matchInfo.innerHTML = `
             <h2 class="light-green"><strong>${match.name}</strong></h2>
-            <p><center>@ ${match.venue} - ${match.date}</center></p>
-            <h3><center>Status</center></h3>
-            <p><center>${match.status}</center></p>
+            <p style="text-align: center;">@ ${match.venue} - ${match.date}</p>
+            <h3 style="text-align: center;">Status</h3>
+            <p style="text-align: center;">${match.status}</p>
             <p>${scoreHtml}</p>
         `;
     // Show the "Go Back" button
     goBackButton.style.display = 'block';
-
 }
+
+// Add event listener to the "Go Back" button
+document.getElementById('go-back').addEventListener('click', goBack);
 
 // Go back to match list
 function goBack() {
