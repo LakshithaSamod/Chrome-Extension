@@ -1,12 +1,12 @@
-##  Live Cricket Matches - Chrome Extension
+##  Recent Cricket Matches - Chrome Extension
 
-This is a Chrome extension that displays live cricket matches using the cricapi. It is built using basic HTML, CSS, and JavaScript. The extension allows you to view today's matches and click on a specific match to see its details.
+This is a Chrome extension that displays recent cricket matches using the cricapi. It is built using basic HTML, CSS, and JavaScript. The extension allows you to view today's matches and click on a specific match to see its details.
 
 ### Features
 
-- Displays live cricket matches using the cricapi
+- Displays recent cricket matches using the cricapi
 - Shows today's matches
-- Clicking on a match displays its details with score
+- Clicking on a match displays its details with the score
 
 ### Installation
 
@@ -36,7 +36,7 @@ Once the Cricket Live Matches Chrome Extension is installed, follow these steps 
 
 ### Technologies Used
 
-The Cricket Live Matches Chrome Extension is built using the following technologies:
+The Recent Cricket Matches Chrome Extension is built using the following technologies:
 
 - HTML
 - CSS
